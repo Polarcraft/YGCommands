@@ -20,7 +20,7 @@ public class Fly implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
 		Player p = (Player) sender;
-		if(plugin.getConfig().getBoolean("enabled.fly", true)) {
+		if(plugin.getConfig().getBoolean("enabled.fly") == true) {
 			if (cmd.getName().equalsIgnoreCase("fly")) {
 				if(args.length < 1){
 					sender.sendMessage(ChatColor.RED + "Try /fly <player>");

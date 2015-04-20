@@ -21,7 +21,7 @@ public class Ban implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
 		Player p = (Player) sender;
-		if(plugin.getConfig().getBoolean("enabled.ban", true)) {
+		if(plugin.getConfig().getBoolean("enabled.ban") == true) {
 			if (cmd.getName().equalsIgnoreCase("ban")) {
 				if(args.length < 2){
 					sender.sendMessage(ChatColor.RED + "Try /ban <Player> <reason>");

@@ -20,7 +20,7 @@ public class Kick implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
 		Player p = (Player) sender;
-		if(plugin.getConfig().getBoolean("enabled.kick", true)) {
+		if(plugin.getConfig().getBoolean("enabled.kick") == true) {
 			if (cmd.getName().equalsIgnoreCase("kick")) {
 				if(args.length < 2){
 					sender.sendMessage(ChatColor.RED + "Try /kick <Player> <reason>");

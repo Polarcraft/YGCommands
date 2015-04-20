@@ -22,7 +22,7 @@ public class Unban implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
 		Player p = (Player) sender;
-		if (plugin.getConfig().getBoolean("enabled.unban", true)) {
+		if (plugin.getConfig().getBoolean("enabled.unban") == true) {
 			if (cmd.getName().equalsIgnoreCase("unban")) {
 				if(args.length < 1){
 					sender.sendMessage(ChatColor.RED + "Try /unban <Player>");

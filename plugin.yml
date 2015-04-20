@@ -12,3 +12,5 @@ commands:
     description: Kick
   unban:
     description: Unban
+  yg:
+    description: Yg

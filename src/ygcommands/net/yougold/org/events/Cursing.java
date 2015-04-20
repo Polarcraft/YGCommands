@@ -10,15 +10,15 @@ import ygcommands.net.yougold.org.Main;
 
 public class Cursing implements Listener {
 
-	  private Main plugin;
+	private Main plugin;
 	  
-	  public Cursing(Main plugin) {
-	    this.plugin = plugin;
-	  }
+	public Cursing(Main plugin) {
+		  this.plugin = plugin;
+	}
 	
 	@EventHandler
 	public void onPlayerChat(AsyncPlayerChatEvent e) {
-		if(plugin.getConfig().getBoolean("enabled.anticursing", true)) {
+		if(plugin.getConfig().getBoolean("enabled.anticursing") == true) {
 			for(String word : e.getMessage().split(" ")) {
 				if(plugin.getConfig().getStringList("cursewords").contains(word)) {
 					e.setCancelled(true);
