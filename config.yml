@@ -1,0 +1,37 @@
+#####################################################################
+##▒█░░▒█ ▒█▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▀▄▀█ ▒█▀▄▀█ ░█▀▀█ ▒█▄░▒█ ▒█▀▀▄ ▒█▀▀▀█##
+##▒█▄▄▄█ ▒█░▄▄ ▒█░░░ ▒█░░▒█ ▒█▒█▒█ ▒█▒█▒█ ▒█▄▄█ ▒█▒█▒█ ▒█░▒█ ░▀▀▀▄▄##
+##░░▒█░░ ▒█▄▄█ ▒█▄▄█ ▒█▄▄▄█ ▒█░░▒█ ▒█░░▒█ ▒█░▒█ ▒█░░▀█ ▒█▄▄▀ ▒█▄▄▄█##
+#####################################################################
+# This section is for the messages being sent! 
+# What you can do to replace stuff 
+# %player = Player 
+# %reason = kick/ban reason
+# Can't put an unban reason here, but you can put %sender for who unbanned the player!
+# This section is for the hat message being sent!
+# What you can do to replace stuff
+# %player = Player
+# Also just a warning there is no replacements for the anticurse-prefix or cursemessage!
+messages:
+  anticurse-prefix: "&c&l[&4&lAntiCursing&c&l]&f"
+  cursemessage: "&4You are not allowed to curse!"
+  player-ban-message: "&c%player: &4You have been banned for: %reason!"
+  player-kick-message: "&c%player: &4You have been kicked for: %reason!"
+  player-unban-message: "&c%player has been unbanned by: %sender!"
+
+###############################################################
+## This section is to disable and enable parts of the plugin!##
+##                      true = enabled                       ##
+##                     false = disabled                      ##
+###############################################################
+enabled:
+  anticursing: true
+  ban: true
+  fly: true
+  hat: true
+  kick: true
+  unban: true
+cursewords:
+- fuck
+- shit
+- crap

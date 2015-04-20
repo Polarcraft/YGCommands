@@ -1,0 +1,14 @@
+name: YGCommands
+main: ygcommands.net.yougold.org.Main
+version: 4.19.15
+commands:
+  ban:
+    description: Ban
+  fly:
+    description: Fly
+  hat:
+    description: Hat
+  kick:
+    description: Kick
+  unban:
+    description: Unban
