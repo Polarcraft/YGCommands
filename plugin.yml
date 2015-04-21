@@ -10,6 +10,8 @@ commands:
     description: Hat
   kick:
     description: Kick
+  gm:
+    description: Gm
   unban:
     description: Unban
   yg:

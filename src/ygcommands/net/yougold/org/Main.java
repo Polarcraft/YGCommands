@@ -2,12 +2,7 @@ package ygcommands.net.yougold.org;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import ygcommands.net.yougold.org.commands.Ban;
-import ygcommands.net.yougold.org.commands.Fly;
-import ygcommands.net.yougold.org.commands.Hat;
-import ygcommands.net.yougold.org.commands.Kick;
-import ygcommands.net.yougold.org.commands.Reload;
-import ygcommands.net.yougold.org.commands.Unban;
+import ygcommands.net.yougold.org.commands.*;
 import ygcommands.net.yougold.org.events.Cursing;
 
 public class Main extends JavaPlugin {
@@ -17,6 +12,7 @@ public class Main extends JavaPlugin {
 		getCommand("fly").setExecutor(new Fly(this));
 		getCommand("hat").setExecutor(new Hat(this));
 		getCommand("kick").setExecutor(new Kick(this));
+		getCommand("gm").setExecutor(new Gamemode(this));
 		getCommand("unban").setExecutor(new Unban(this));
 		getCommand("yg").setExecutor(new Reload(this));
 		getServer().getPluginManager().registerEvents(new Cursing(this), this);

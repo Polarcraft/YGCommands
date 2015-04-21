@@ -30,6 +30,7 @@ enabled:
   fly: true
   hat: true
   kick: true
+  gamemode: true
   unban: true
 cursewords:
 - fuck
