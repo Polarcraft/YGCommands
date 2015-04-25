@@ -8,6 +8,7 @@ import ygcommands.net.yougold.org.events.Cursing;
 public class Main extends JavaPlugin {
 	
 	public void onEnable() {
+		//Commands
 		getCommand("ban").setExecutor(new Ban(this));
 		getCommand("fly").setExecutor(new Fly(this));
 		getCommand("hat").setExecutor(new Hat(this));
@@ -15,7 +16,9 @@ public class Main extends JavaPlugin {
 		getCommand("gm").setExecutor(new Gamemode(this));
 		getCommand("unban").setExecutor(new Unban(this));
 		getCommand("yg").setExecutor(new Reload(this));
+		//Events
 		getServer().getPluginManager().registerEvents(new Cursing(this), this);
+		//Config
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 	}
